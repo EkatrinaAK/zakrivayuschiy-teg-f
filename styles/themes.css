@@ -4,3 +4,85 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root {
+  --main-font: "Inter-Variable", Akshar, sans-serif;
+  --accent-font: "PressStart2P-Regular";
+  --themes-background: #fff;
+  --text-color: #000;
+  --bg-image: repeating-linear-gradient(to left, #d3d3d3, rgb(211 211 211 / 0) 2px), 
+              repeating-linear-gradient(to top, #d3d3d3, rgb(211 211 211 / 0) 2px),
+              linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --stroke-color: var(--themes-background);
+  --heart-button-text-color: var(--themes-background);
+  --contour-color: var(--text-color);
+  --sparks-color: #FF0000;
+  --core-color: var(--text-color);
+  --wgt-titel:700;
+  --wgt-text:400;
+}
+
+.theme-light .page {
+  --main-font: "Inter-Variable", Akshar, sans-serif;
+  --accent-font: "PressStart2P-Regular";
+  --themes-background: #fff;
+  --text-color: #000;
+  --bg-image: repeating-linear-gradient(to left, #d3d3d3, rgb(211 211 211 / 0) 2px), 
+              repeating-linear-gradient(to top, #d3d3d3, rgb(211 211 211 / 0) 2px),
+              linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --stroke-color: var(--themes-background);
+  --heart-button-text-color: var(--themes-background);
+  --contour-color: var(--text-color);
+  --sparks-color: #FF0000;
+  --core-color: var(--text-color);
+  --wgt-titel:700;
+  --wgt-text:400;
+}
+@media (prefers-color-scheme: light) {
+  :root.theme-light {
+    --main-font: "Inter-Variable", Akshar, sans-serif;
+    --accent-font: "PressStart2P-Regular";
+    --themes-background: #fff;
+    --text-color: #000;
+    --bg-image: repeating-linear-gradient(to left, #d3d3d3, rgb(211 211 211 / 0) 2px), 
+                repeating-linear-gradient(to top, #d3d3d3, rgb(211 211 211 / 0) 2px),
+                linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+    --stroke-color: var(--themes-background);
+    --heart-button-text-color: var(--themes-background);
+    --contour-color: var(--text-color);
+    --sparks-color: #FF0000;
+    --core-color: var(--text-color);
+    --wgt-titel:700;
+  --wgt-text:400;
+  }
+}
+
+.theme-dark .page {
+  --main-font: "Inter-Variable", Akshar, sans-serif;
+  --accent-font: "PressStart2P-Regular";
+  --themes-background: #000;
+  --text-color: #00cc14;
+  --bg-image: url(/images/bground_dark.png);
+  --stroke-color: var(--themes-background);
+  --heart-button-text-color: var(--text-color);
+  --contour-color: var(--text-color);
+  --sparks-color: #FF0000;
+  --core-color: var(--sparks-color);
+  --wgt-titel:785;
+  --wgt-text:465;
+}
+@media (prefers-color-scheme: dark) {
+  :root.theme-dark {
+    --main-font: "Inter-Variable", Akshar, sans-serif;
+    --accent-font: "PressStart2P-Regular";
+    --themes-background: #000;
+    --text-color: #00cc14;
+    --bg-image: url(/images/bground_dark.png);
+    --stroke-color: var(--themes-background);
+    --heart-button-text-color: var(--text-color);
+    --contour-color: var(--text-color);
+    --sparks-color: #FF0000;
+    --core-color: var(--sparks-color);
+    --wgt-titel:785;
+    --wgt-text:465;
+  }
+}
