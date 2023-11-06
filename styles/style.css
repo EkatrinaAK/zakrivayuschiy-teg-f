@@ -219,10 +219,10 @@
   -webkit-text-stroke-color: var(--stroke-color);
 }
 
-@supports((text-stroke: 1px var(--stroke-color)) or (-webkit-text-stroke: 1px var(--stroke-color))) {
+@supports ((text-stroke: 1px var(--stroke-color)) or (-webkit-text-stroke: 1px var(--stroke-color))) {
   .label {
-      -webkit-text-stroke: 1px var(--stroke-color);
-      text-stroke: 1px var(--stroke-color); 
+    -webkit-text-stroke: 1px var(--stroke-color);
+    text-stroke: 1px var(--stroke-color);
   }
 }
 
@@ -242,6 +242,31 @@
     max-width: inherit;
     padding-bottom: 30px;
   }
+}
+/*фильтры*/
+.image-1 {
+  filter: contrast(20%);
+}
+.image-2 {
+  filter: brightness(200%);
+}
+.image-3 {
+  filter: blur(0.2rem);
+}
+.image-4 {
+  filter: opacity(0.5);
+}
+.image-5 {
+  filter: grayscale(0.8);
+}
+.image-6 {
+  filter: saturate(15%);
+}
+.image-7 {
+  filter: hue-rotate(93deg);
+}
+.image-8{
+  filter: brightness(200%) invert(0.7);
 }
 .text-parag {
   font-family: var(--main-font);
