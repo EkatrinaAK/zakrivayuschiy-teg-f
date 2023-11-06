@@ -218,6 +218,14 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--stroke-color);
 }
+
+@supports((text-stroke: 1px var(--stroke-color)) or (-webkit-text-stroke: 1px var(--stroke-color))) {
+  .label {
+      -webkit-text-stroke: 1px var(--stroke-color);
+      text-stroke: 1px var(--stroke-color); 
+  }
+}
+
 @media (width >375px) {
   .label {
     top: 30px;
@@ -269,7 +277,6 @@
 }
 /*кнопка сердце*/
 .card__icon-button {
-  border: transparent;
   background-color: var(--themes-background);
   transition: border 3s ease;
   border: 2px solid transparent;
