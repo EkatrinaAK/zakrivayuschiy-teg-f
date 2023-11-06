@@ -191,7 +191,7 @@
   line-height: normal;
   padding-left: 10px;
   padding-right: 10px;
-  font-variation-settings: "wdth" var(--wgt-titel);
+  font-variation-settings: "wght" var(--wgt-titel);
 }
 .card_label {
   position: relative;
@@ -233,6 +233,7 @@
   }
 }
 .card {
+  width: 100%;
   padding-top: 8px;
   padding-bottom: 21px;
 }
@@ -270,7 +271,7 @@
 .text-parag {
   font-family: var(--main-font);
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
-  font-variation-settings: "wdth" var(--wgt-text);
+  font-variation-settings: "wght" var(--wgt-text);
   padding-left: 25px;
   padding-right: 25px;
   line-height: 21px;
@@ -285,7 +286,7 @@
 }
 .conclusion {
   font-family: var(--main-font);
-  font-variation-settings: "wdth" var(--wgt-text);
+  font-variation-settings: "wght" var(--wgt-text);
   padding-top: 27px;
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
 }
