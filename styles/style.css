@@ -191,8 +191,7 @@
   line-height: normal;
   padding-left: 10px;
   padding-right: 10px;
-  font-weight: var(--wgt-titel);
-  line-height: normal;
+  font-variation-settings: "wdth" var(--wgt-titel);
 }
 .card_label {
   position: relative;
@@ -239,7 +238,7 @@
 .text-parag {
   font-family: var(--main-font);
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
-  font-weight: var(--wgt-text);
+  font-variation-settings: "wdth" var(--wgt-text);
   padding-left: 25px;
   padding-right: 25px;
   line-height: 21px;
@@ -247,13 +246,14 @@
 .title-parag_sub {
   display: block;
 }
-@media  (width >375px) {
+@media (width >375px) {
   .title-parag_sub {
-  display: inline;
-}
+    display: inline;
+  }
 }
 .conclusion {
   font-family: var(--main-font);
+  font-variation-settings: "wdth" var(--wgt-text);
   padding-top: 27px;
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
 }
@@ -271,9 +271,8 @@
 .card__icon-button {
   border: transparent;
   background-color: var(--themes-background);
-  transition: all 3s ease;
+  transition: border 3s ease;
   border: 2px solid transparent;
-  outline: none;
   cursor: pointer;
   padding: -2px;
 }
@@ -362,7 +361,6 @@
   animation-duration: 0.3s;
   animation-delay: 0.3s;
   animation-timing-function: ease-in;
-
 }
 /*кнопка like*/
 .card__like-button {
