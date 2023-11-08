@@ -285,6 +285,15 @@
   cursor: pointer;
   padding: -2px;
 }
+/*состояние кнопки*/
+.card__icon-button:focus {
+  border: 2px solid transparent;
+  outline: none;
+}
+.card__icon-button:focus-visible {
+  border: 2px solid var(--text-color);
+  outline: none;
+}
 /*сердце*/
 .main-body {
   fill: transparent;
@@ -297,53 +306,7 @@
 .sparks {
   opacity: 0;
 }
-/*клик по сердцу*/
-.like-icon.is-liked .core {
-  fill: var(--sparks-color);
-  transition-delay: 0.03s;
-}
-.like-icon.is-liked .main-body {
-  fill: var(--sparks-color);
-  transition-delay: 0.05s;
-}
-.like-icon.is-liked .contour {
-  fill: var(--sparks-color);
-  transition-delay: 0.06s;
-}
-/*анимация масштаб сердца*/
-@keyframes heart_scale {
-  froom {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-/*анимация искры*/
-@keyframes sparks_anim {
-  froom {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.like-icon.is-liked .heart {
-  animation-name: heart_scale;
-  animation-delay: 0.1s;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-in;
-  transform-origin: 50% 50%;
-}
-.like-icon.is-liked .sparks {
-  animation-name: sparks_anim;
-  animation-duration: 0.3s;
-  animation-delay: 0.3s;
-  animation-timing-function: ease-in;
-}
+
 /*кнопка like*/
 .card__like-button {
   position: relative;
@@ -353,27 +316,6 @@
   cursor: pointer;
   min-height: 36px;
   min-width: 118px;
-}
-/*анимация like*/
-.card__like-button::after {
-  content: "";
-  background-color: var(--text-color);
-  transition: transform 0.5s ease-in-out;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  transform: scaleX(0);
-  transform-origin: left;
-  z-index: 1;
-}
-.card__like-button:hover:after {
-  transform: scaleX(1);
-}
-.card__like-button:focus {
-  outline: none;
-  box-shadow: 2px 2px 0px 0px var(--text-color);
 }
 /*текст для like*/
 .button__text {
@@ -396,6 +338,7 @@
   padding-right: 35px;
   padding-bottom: 102px;
 }
+/*стили для дискеты*/
 .floppy {
   width: 28px;
   height: 28px;
@@ -411,6 +354,7 @@
     margin: 0;
   }
 }
+/*кнопка сохранить*/
 .save {
   position: relative;
   display: grid;
@@ -428,11 +372,11 @@
     justify-self: center;
   }
 }
+/*состояния для кнопки*/
 .save:focus {
   outline: none;
   box-shadow: 2px 2px 0px 0px var(--text-color);
 }
-
 .save::after {
   content: "";
   background-color: var(--text-color);
@@ -449,7 +393,7 @@
 .save:hover:after {
   transform: scaleX(1);
 }
-
+/*текст кнопки*/
 .save-text {
   color: var(--heart-button-text-color);
   mix-blend-mode: difference;
@@ -479,10 +423,12 @@
     margin: auto;
   }
 }
+/*оверлей*/
 .dialog::backdrop {
   opacity: 0.75;
   background-color: var(--text-color, #000);
 }
+/*стили для всплывающего окна*/
 .dialog-content {
   display: grid;
   background-color: var(--themes-background);
@@ -497,12 +443,14 @@
     padding: 30px 30px;
   }
 }
+/*дискета в окне*/
 .floppy-dialog {
   width: 38px;
   height: 38px;
   align-self: center;
   color: var(--text-color);
 }
+/*стили для текста в окне*/
 .text-dialog {
   font-family: var(--accent-font);
   color: var(--text-color);
@@ -512,6 +460,7 @@
   line-height: 150%; /* 21px */
   text-transform: uppercase;
 }
+/*кнопка ок*/
 .close {
   position: relative;
   display: grid;
@@ -522,6 +471,7 @@
   padding: 9px 17px;
   cursor: pointer;
 }
+/*текст кнопки*/
 .text-close {
   color: var(--heart-button-text-color);
   mix-blend-mode: difference;
@@ -533,6 +483,7 @@
   text-transform: uppercase;
   z-index: 2;
 }
+/*состояния кнопки*/
 .close::after {
   content: "";
   background-color: var(--text-color);
