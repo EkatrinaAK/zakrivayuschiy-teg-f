@@ -24,3 +24,30 @@
       transform: translateX(0);
     }
   }
+  /*состояния кнопки сердца*/
+.card__icon-button:focus {
+    border: 2px solid transparent;
+    outline: none;
+  }
+  .card__icon-button:focus-visible {
+    border: 2px solid var(--text-color);
+    outline: none;
+  }
+  
+  .card__icon-button:hover .core {
+    fill: var(--text-color);
+    transition-delay: 0.03s;
+  }
+  .card__icon-button:hover .main-body {
+    fill: var(--text-color);
+    transition-delay: 0.05s;
+  }
+  .card__icon-button:active .core {
+    fill: var(--sparks-color);
+    transition-delay: 0.03s;
+  }
+  .card__icon-button:active .main-body {
+    fill: var(--sparks-color);
+    transition-delay: 0.05s;
+  }
+  
