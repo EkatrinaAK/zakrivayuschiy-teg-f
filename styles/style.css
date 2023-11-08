@@ -125,18 +125,6 @@
 .theme-menu__button:hover {
   cursor: pointer;
 }
-/*анимация*/
-@keyframes cursor {
-  from {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(4px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 /*заголовок*/
 .header_title {
   font-family: var(--accent-font);
@@ -177,9 +165,11 @@
   background-color: var(--themes-background);
   border: 2px solid var(--text-color);
 }
+/*статья*/
 .list-item-parag {
   display: grid;
 }
+/*заголовок статьи*/
 .title-parag {
   font-family: var(--main-font);
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
@@ -188,6 +178,7 @@
   padding-right: 10px;
   font-variation-settings: "wght" var(--wgt-titel);
 }
+/*картинка*/
 .card_label {
   position: relative;
 }
@@ -197,6 +188,7 @@
     justify-items: stretch;
   }
 }
+/*надпись*/
 .label {
   position: absolute;
   top: 30px;
@@ -213,20 +205,19 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--stroke-color);
 }
-
 @supports ((text-stroke: 1px var(--stroke-color)) or (-webkit-text-stroke: 1px var(--stroke-color))) {
   .label {
     -webkit-text-stroke: 1px var(--stroke-color);
     text-stroke: 1px var(--stroke-color);
   }
 }
-
 @media (width >375px) {
   .label {
     top: 30px;
     right: 25px;
   }
 }
+/*img*/
 .card {
   width: 100%;
   padding-top: 8px;
@@ -262,6 +253,7 @@
 .image-8 {
   filter: brightness(200%) invert(0.7);
 }
+/*стили для текста*/
 .text-parag {
   display: grid;
   font-family: var(--main-font);
@@ -271,6 +263,7 @@
   padding-right: 25px;
   line-height: 21px;
 }
+/*отступ между p*/
 .conclusion {
   padding-top: 27px;
 }

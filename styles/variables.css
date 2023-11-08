@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   --main-font: "Inter", Akshar, sans-serif;
-  --accent-font: "PressStart2P-Regular","Press Start Regular", fantasy;
+  --accent-font: "PressStart2P-Regular","Press Start Regular", sans-serif;
   --themes-background: #fff;
   --text-color: #000;
   --bg-image: repeating-linear-gradient(to left, #d3d3d3, rgb(211 211 211 / 0) 2px),

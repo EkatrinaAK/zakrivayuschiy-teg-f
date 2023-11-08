@@ -5,7 +5,7 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
-.theme-light{
+.theme-light {
   --main-font: "Inter", Akshar, sans-serif;
   --accent-font: "PressStart2P-Regular";
   --themes-background: #fff;
@@ -37,7 +37,7 @@
   }
 }
 
-.theme-dark{
+.theme-dark {
   --themes-background: #000;
   --text-color: #00cc14;
   --bg-image: url(/images/bground_dark.png);
