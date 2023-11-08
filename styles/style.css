@@ -172,11 +172,6 @@
   gap: 57px;
   margin-bottom: 54px;
 }
-@media (width >375px) {
-  .main-list {
-    gap: 56px;
-  }
-}
 .main-list-item {
   display: grid;
   background-color: var(--themes-background);
@@ -239,7 +234,6 @@
 }
 @media (width >375px) {
   .card {
-    width: 100%;
     padding-bottom: 30px;
   }
 }
@@ -269,6 +263,7 @@
   filter: brightness(200%) invert(0.7);
 }
 .text-parag {
+  display: grid;
   font-family: var(--main-font);
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   font-variation-settings: "wght" var(--wgt-text);
@@ -276,19 +271,8 @@
   padding-right: 25px;
   line-height: 21px;
 }
-.title-parag_sub {
-  display: block;
-}
-@media (width >375px) {
-  .title-parag_sub {
-    display: inline;
-  }
-}
 .conclusion {
-  font-family: var(--main-font);
-  font-variation-settings: "wght" var(--wgt-text);
   padding-top: 27px;
-  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
 }
 /* кнопка с сердцем*/
 .heart_box {
