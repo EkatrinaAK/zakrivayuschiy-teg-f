@@ -32,19 +32,20 @@
     max-width: 696px;
   }
 }
+.header {
+  margin-top: 100px;
+  margin-bottom: 103px;
+}
 /*осовной заголовок*/
 .theme-menu {
   display: grid;
   background-color: var(--themes-background);
-  margin-top: 100px;
   padding-left: 2px;
   padding-right: 2px;
   min-height: 328px;
-  justify-content: center;
   align-content: center;
   gap: 20px;
   border: 2px solid var(--text-color);
-  margin-bottom: 104px;
 }
 @media (width >375px) {
   .theme-menu {
@@ -65,6 +66,7 @@
   line-height: normal;
   text-transform: uppercase;
   justify-self: center;
+  padding-left: 20px;
 }
 @media (width >375px) {
   .theme-menu__list {
@@ -108,23 +110,29 @@
 }
 .theme-menu__button:before {
   width: 20px;
-  content: "";
   display: inline-block;
   pointer-events: none;
-}
-.theme-menu__button:disabled:before {
+  display: none;
   content: "▶";
   width: 14px;
   height: 14px;
   opacity: 0.6;
+  left: -15px;
+  position: absolute;
+}
+.theme-menu__button:disabled:before {
+  display: block;
   animation-name: cursor;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 .theme-menu__button:hover {
   opacity: 0.6;
   cursor: pointer;
+}
+.theme-menu__button:disabled:hover {
+  cursor: default;
 }
 /*заголовок*/
 .header_title {
@@ -158,9 +166,10 @@
 .main-list {
   display: grid;
   color: var(--text-color);
-  gap: 57px;
-  margin-bottom: 54px;
+  gap: 55px;
+  margin-bottom: 50px;
 }
+
 .main-list-item {
   display: grid;
   background-color: var(--themes-background);
@@ -178,7 +187,7 @@
   padding-left: 10px;
   padding-right: 10px;
   font-variation-settings: "wght" var(--wgt-titel);
-  border-block-end: 2px solid var(--text-color, #000);
+  border-block-end: 2px solid var(--text-color);
 }
 
 /*картинка*/
@@ -223,13 +232,9 @@
 /*img*/
 .card {
   width: 100%;
-  padding-bottom: 27px;
+  border-block-end: 2px solid var(--text-color, #000);
 }
-@media (width >375px) {
-  .card {
-    padding-bottom: 30px;
-  }
-}
+
 /*фильтры*/
 .image-1 {
   filter: contrast(20%);
@@ -263,11 +268,22 @@
   font-variation-settings: "wght" var(--wgt-text);
   padding-left: 25px;
   padding-right: 25px;
+  padding-top: 27px;
   line-height: 21px;
+}
+@media (width >375px) {
+  .text-parag {
+    padding-top: 32px;
+  }
 }
 /*отступ между p*/
 .conclusion {
   padding-top: 27px;
+}
+@media (width >375px) {
+  .conclusion {
+    padding-top: 30px;
+  }
 }
 /* кнопка с сердцем*/
 .heart_box {
@@ -317,7 +333,7 @@
   border: 2px solid var(--text-color);
   cursor: pointer;
   min-height: 36px;
-  min-width: 118px;
+  min-width: 130px;
 }
 /*текст для like*/
 .button__text {
@@ -372,6 +388,7 @@
     justify-content: center;
     padding: 15px 20px;
     justify-self: center;
+    align-items: center;
   }
 }
 /*состояния для кнопки*/
