@@ -109,8 +109,6 @@
   cursor: default;
 }
 .theme-menu__button:before {
-  width: 20px;
-  display: inline-block;
   pointer-events: none;
   display: none;
   content: "▶";
