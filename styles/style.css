@@ -65,7 +65,6 @@
   line-height: normal;
   text-transform: uppercase;
   justify-self: center;
-  padding-left: 20px;
 }
 @media (width >375px) {
   .theme-menu__list {
@@ -105,24 +104,26 @@
 /*активный элемент*/
 .theme-menu__button:disabled {
   opacity: 0.6;
+  cursor: default;
 }
 .theme-menu__button:before {
   width: 20px;
   content: "";
   display: inline-block;
+  pointer-events: none;
 }
 .theme-menu__button:disabled:before {
   content: "▶";
   width: 14px;
   height: 14px;
   opacity: 0.6;
-  pointer-events: none;
   animation-name: cursor;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 .theme-menu__button:hover {
+  opacity: 0.6;
   cursor: pointer;
 }
 /*заголовок*/
@@ -177,7 +178,9 @@
   padding-left: 10px;
   padding-right: 10px;
   font-variation-settings: "wght" var(--wgt-titel);
+  border-block-end: 2px solid var(--text-color, #000);
 }
+
 /*картинка*/
 .card_label {
   position: relative;
@@ -220,8 +223,7 @@
 /*img*/
 .card {
   width: 100%;
-  padding-top: 8px;
-  padding-bottom: 21px;
+  padding-bottom: 27px;
 }
 @media (width >375px) {
   .card {
@@ -327,7 +329,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 90%;
-  padding: 9px 29px;
+  padding: 9px 0;
   z-index: 2;
 }
 /*подвал*/
@@ -342,7 +344,7 @@
 .floppy {
   width: 28px;
   height: 28px;
-  color: var(--themes-background);
+  color: var(--floppy-color);
   mix-blend-mode: difference;
   margin-top: 15px;
   z-index: 2;

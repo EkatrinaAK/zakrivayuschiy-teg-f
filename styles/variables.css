@@ -4,9 +4,9 @@
   --accent-font: "PressStart2P-Regular","Press Start Regular", sans-serif;
   --themes-background: #fff;
   --text-color: #000;
-  --bg-image: repeating-linear-gradient(to left, #d3d3d3, rgb(211 211 211 / 0) 2px),
-    repeating-linear-gradient(to top, #d3d3d3, rgb(211 211 211 / 0) 2px),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --bg-image: repeating-linear-gradient(to left, #d3d3d3 0 2px, transparent 2px 4px),
+                repeating-linear-gradient(to top, #d3d3d3 0 2px, transparent 2px 4px),
+                linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
   --stroke-color: var(--themes-background);
   --heart-button-text-color: var(--themes-background);
   --contour-color: var(--text-color);
@@ -14,4 +14,5 @@
   --core-color: var(--text-color);
   --wgt-titel:700;
   --wgt-text:400;
+  --floppy-color: var(--themes-background);
 }
