@@ -105,7 +105,3 @@
 .card__like-button:hover:after {
   transform: scaleX(1);
 }
-.card__like-button:focus {
-  outline: none;
-  box-shadow: 2px 2px 0px 0px var(--text-color);
-}

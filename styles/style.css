@@ -34,7 +34,7 @@
 }
 .header {
   margin-top: 100px;
-  margin-bottom: 103px;
+  margin-bottom: 104px;
 }
 /*осовной заголовок*/
 .theme-menu {
@@ -114,7 +114,6 @@
   content: "▶";
   width: 14px;
   height: 14px;
-  opacity: 0.6;
   left: -15px;
   position: absolute;
 }
@@ -164,7 +163,7 @@
 .main-list {
   display: grid;
   color: var(--text-color);
-  gap: 55px;
+  gap: 53px;
   margin-bottom: 50px;
 }
 
@@ -176,6 +175,13 @@
 /*статья*/
 .list-item-parag {
   display: grid;
+  gap: 27px;
+}
+@media (width >375px) {
+  .list-item-parag {
+    gap:35px;
+  }
+  
 }
 /*заголовок статьи*/
 .title-parag {
@@ -187,7 +193,6 @@
   font-variation-settings: "wght" var(--wgt-titel);
   border-block-end: 2px solid var(--text-color);
 }
-
 /*картинка*/
 .card_label {
   position: relative;
@@ -232,7 +237,6 @@
   width: 100%;
   border-block-end: 2px solid var(--text-color, #000);
 }
-
 /*фильтры*/
 .image-1 {
   filter: contrast(20%);
@@ -259,36 +263,25 @@
   filter: brightness(200%) invert(0.7);
 }
 /*стили для текста*/
+.parag {
+  display: grid;
+  padding-left: 25px;
+  padding-right: 25px;
+  gap:27px;
+}
 .text-parag {
   display: grid;
   font-family: var(--main-font);
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   font-variation-settings: "wght" var(--wgt-text);
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 27px;
   line-height: 21px;
-}
-@media (width >375px) {
-  .text-parag {
-    padding-top: 32px;
-  }
-}
-/*отступ между p*/
-.conclusion {
-  padding-top: 27px;
-}
-@media (width >375px) {
-  .conclusion {
-    padding-top: 30px;
-  }
 }
 /* кнопка с сердцем*/
 .heart_box {
   display: grid;
   grid-template-columns: auto auto;
-  padding-bottom: 20px;
   padding-top: 20px;
+  padding-bottom: 22px;
   margin-right: 25px;
   justify-content: end;
   align-items: center;
@@ -333,6 +326,10 @@
   min-height: 36px;
   min-width: 130px;
 }
+.card__like-button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0px 0px var(--text-color);
+}
 /*текст для like*/
 .button__text {
   mix-blend-mode: difference;
@@ -343,7 +340,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 90%;
-  padding: 9px 0;
   z-index: 2;
 }
 /*подвал*/
